@@ -31,7 +31,7 @@ dir input_artifacts
 @rem TODO: do the signing...
 
 @rem Adjust the location of nuget.exe
-set NUGET=C:\nuget\nuget.exe
+set NUGET=nuget.exe
 set DOTNET=dotnet
 set SIGNTOOL="c:\Program Files (x86)\Windows kits\10\bin\x86\signtool.exe"
 
