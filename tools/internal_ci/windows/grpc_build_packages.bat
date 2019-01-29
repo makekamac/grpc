@@ -35,8 +35,10 @@ set NUGET=nuget.exe
 set DOTNET=dotnet
 set SIGNTOOL="c:\Program Files (x86)\Windows kits\10\bin\x86\signtool.exe"
 
-%NUGET% update -self
-%NUGET% sign /debug Grpc.Core.1.18.0.nupkg -CertificateSubjectName "Google Inc" -Timestamper http://timestamp.comodoca.com/authenticode
+@rem %NUGET% update -self
+%NUGET% sign Grpc.Core.1.18.0.nupkg -Verbosity detailed -Timestamper http://timestamp.comodoca.com/authenticode
+
+%SIGNTOOL% 
 
 mkdir artifacts
 xcopy /Y /I *.nupkg artifacts\ 
