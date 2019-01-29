@@ -36,7 +36,7 @@ set DOTNET=dotnet
 set SIGNTOOL="c:\Program Files (x86)\Windows kits\10\bin\x86\signtool.exe"
 
 @rem %NUGET% update -self
-%NUGET% sign Grpc.Core.1.18.0.nupkg -CertificateSubjectName "Google LLC" -Verbosity detailed -Overwrite -Timestamper http://timestamp.comodoca.com/authenticode
+%NUGET% sign Grpc.Core.1.18.0.nupkg -CertificateSubjectName "Google LLC" -Verbosity detailed -Overwrite -Timestamper  http://timestamp.digicert.com
 
 %SIGNTOOL% 
 
