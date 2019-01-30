@@ -10,7 +10,7 @@ $signedNuget = "$nugetfile.signed"
 
 # paths to tooling
 $signtoolExe = "c:\Program Files (x86)\Windows kits\10\bin\x86\signtool.exe"
-# TODO(jtattermusch): set correct path for nuget.ext (must be version >4.6)
+# TODO(jtattermusch): set correct path for nuget.exe (must be version >4.6)
 $nugetExe = "T:\src\git\grpc\nuget.exe"
 
 Add-Type -Assembly 'System.IO.Compression.FileSystem';
