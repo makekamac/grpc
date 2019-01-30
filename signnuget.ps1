@@ -10,7 +10,7 @@ $signedNuget = "$nugetfile.signed"
 
 # paths to tooling
 $signtoolExe = "c:\Program Files (x86)\Windows kits\10\bin\x86\signtool.exe"
-$nugetExe = "nuget.exe"
+$nugetExe = ".\nuget.exe"
 
 Add-Type -Assembly 'System.IO.Compression.FileSystem';
 
