@@ -17,7 +17,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Grpc\\": "src/php/lib/Grpc/"
+      "Grpc\\": "src/php/lib/Grpc/"adjhbad
     }
   }
 }
